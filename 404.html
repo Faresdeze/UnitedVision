@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found | United Vision</title>
+  <meta name="description" content="United Vision supplies companies in Belgium with premium branded accessories from Hugo Boss, Cerruti 1881, Festina, Ice-Watch and more, personalized with your logo.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Set theme before first paint to avoid a flash of the wrong colors -->
+  <script>
+    (function () {
+      var pref = null;
+      try { pref = localStorage.getItem("uv-theme"); } catch (e) {}
+      var dark = pref === "dark" || (pref !== "light" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+      document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
+    })();
+  </script>
+
+  <!-- Icons -->
+  <link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/assets/img/favicon-192.png" sizes="192x192" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap">
+
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+
+  <script src="/assets/js/i18n.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+</head>
+<body data-title-key="notFound.title">
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="/" aria-label="United Vision home" data-i18n-attr="aria-label:a11y.home">
+        <img src="/assets/img/logo.png" width="840" height="478" alt="">
+      </a>
+    </div>
+  </header>
+
+  <main class="container not-found">
+    <div>
+      <span class="eyebrow">404</span>
+      <h1 data-i18n="notFound.title">Page not found</h1>
+      <p data-i18n="notFound.text">The page you are looking for does not exist or has moved.</p>
+      <a class="btn btn--primary" href="/" data-i18n="notFound.back">Back to home</a>
+    </div>
+  </main>
+</body>
+</html>

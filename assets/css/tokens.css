@@ -1,0 +1,92 @@
+/* ==========================================================================
+   Design tokens
+   Mirrors the look of the United Vision B2B shop (unitedvision.b2b.gift):
+   Montserrat, black primary buttons, soft grey surfaces, 6px radius.
+   Light is the default; dark is applied via <html data-theme="dark">.
+   ========================================================================== */
+
+:root {
+  /* Typography */
+  --font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --letter-spacing: 0.02em;
+  --letter-spacing-label: 0.12em;
+
+  --text-xs: 0.75rem;   /* 12px */
+  --text-sm: 0.875rem;  /* 14px */
+  --text-md: 1rem;      /* 16px */
+  --text-lg: 1.125rem;  /* 18px */
+  --text-xl: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+  --text-2xl: clamp(2rem, 1.4rem + 2.6vw, 3.25rem);
+
+  /* Spacing & layout */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: clamp(3.5rem, 2.5rem + 4vw, 6rem);
+
+  --max-width: 1200px;
+  --gutter: clamp(1rem, 0.5rem + 2vw, 2rem);
+  --header-height: 4rem;
+
+  --radius: 6px;
+  --radius-lg: 10px;
+  --radius-pill: 999px;
+
+  --transition: 160ms ease;
+
+  /* Brand (from the logo) */
+  --brand-teal: #5bb0b2;
+  --brand-olive: #6b8a3c;
+  --brand-khaki: #a3a073;
+
+  /* Light theme (default) */
+  --color-bg: #ffffff;
+  --color-surface: #f7f7f7;
+  --color-surface-hover: #efefef;
+  --color-border: #dcdcdc;
+  --color-text: #333333;
+  --color-text-muted: #6b6b6b;
+  --color-title: #000000;
+  --color-primary: #000000;
+  --color-primary-hover: #585857;
+  --color-on-primary: #ffffff;
+  --color-accent: #2c7a7c;
+  --color-highlight: #d2e6d6;
+  --color-highlight-text: #258a3e;
+  --color-danger: #c0392b;
+  --color-focus: #2c7a7c;
+  --color-header-bg: rgba(255, 255, 255, 0.92);
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #0e1516;
+  --color-surface: #152022;
+  --color-surface-hover: #1b292c;
+  --color-border: #27363a;
+  --color-text: #d3dbdb;
+  --color-text-muted: #9aa8a9;
+  --color-title: #ffffff;
+  --color-primary: #ffffff;
+  --color-primary-hover: #d6d6d6;
+  --color-on-primary: #000000;
+  --color-accent: #5bb0b2;
+  --color-highlight: #1d3a2f;
+  --color-highlight-text: #8fd3a0;
+  --color-danger: #ff8a80;
+  --color-focus: #5bb0b2;
+  --color-header-bg: rgba(14, 21, 22, 0.9);
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+
+  color-scheme: dark;
+}

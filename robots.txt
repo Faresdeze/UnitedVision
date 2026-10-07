@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://unitedvision.be/sitemap.xml
